@@ -1,0 +1,40 @@
+%html
+  %head
+    %title
+      OSips Snooper
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+%body
+  #pagewidth
+    #wrapper.clearfix
+      #leftcol
+        %h2 OSIPs Control 
+        %strong Commands
+        %ul
+          %li=link_to "Start Server", :action => "start_server"
+          %li=link_to "Stop Server", :action => "stop_server"
+          %li=link_to "Restart Server", :action => "restart_server"
+      #rightcol 
+        %h2 Current Status
+        %fieldset 
+          %legend 
+            Proxy Uptime
+          %pre~ @uptime
+        %fieldset 
+          %legend 
+            Proxy Processes
+          %pre~ @processes
+
+        %fieldset 
+          %legend 
+            Osips Entries in Log
+          %pre~ @log_text
+        %fieldset 
+          %legend 
+            Proxy Stats
+          %pre~ @stats
+                
+

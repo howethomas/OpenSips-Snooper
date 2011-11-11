@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>OsipsSnoop</title>
-  <%= stylesheet_link_tag "style" %>
+  <%= stylesheet_link_tag    "style.css" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>

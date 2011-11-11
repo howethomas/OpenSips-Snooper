@@ -30,7 +30,10 @@ gem 'pg', :require => 'pg'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+gem "devise"
